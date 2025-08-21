@@ -11,14 +11,14 @@ A simple TCP chat program inspired by **netcat**, written in Go.
 ## Usage
 1. Start the server:
    ```bash
-   go run server.go
+   go run main.go <port>
    ```
 
    Default address: 127.0.0.1:8989
 
 2. Connect with client(s):
    ```bash
-   nc 127.0.0.1 8989
+   nc 127.0.0.1 <port>
    ```
 
 ## Features
