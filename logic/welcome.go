@@ -42,6 +42,11 @@ func WelcomeCLient(con net.Conn) {
 	users.info[con] = name
 	users.Unlock()
 
+	if len(name) == 0{
+		delete(users.info, con)
+		return
+	}
+
 	history, err := os.ReadFile("assets/history.txt")
 
 	if err != nil { fmt.Println("Error reading history:", err); return

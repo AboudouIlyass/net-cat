@@ -4,9 +4,9 @@ A simple TCP chat program inspired by **netcat**, written in Go.
 ![Net-Cat Screenshot](assets/readme/screen.png)
 
 # Team members :
+- Fatima Aaziz
 - Ahmed Talbi
 - Ilyass Aboudou
-- Fatima Aaziz
 
 ## Usage
 1. Start the server:
