@@ -28,7 +28,7 @@ func WelcomeCLient(con net.Conn) {
 		"\\____   )MMMMMP|   .'\n" +
 		"     `-'       `--'\n"
 
-	con.Write([]byte("\033[0;93m" + Ping_Win_Mess + "\033[0m" + "[ENTER YOUR NAME]:"))
+	con.Write([]byte("\033[93m" + Ping_Win_Mess + "\033[0m" + "[ENTER YOUR NAME]:"))
 
 	name := ""
 	scanner := bufio.NewScanner(con)
